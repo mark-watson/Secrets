@@ -6,7 +6,7 @@ func getDocumentsDirectory() -> URL {
 }
 
 // Function to read and parse the API key from keys.json
-func getAPIKey(key: String) -> String? {
+public func getAPIKey(key: String) -> String? {
     let fileURL = getDocumentsDirectory().appendingPathComponent("keys.json")
     
     do {
